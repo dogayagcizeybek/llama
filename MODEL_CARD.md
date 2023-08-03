@@ -1,65 +1,66 @@
-# **Model Details**
+# **Model Detayları**
 
-Meta developed and released the Llama 2 family of large language models (LLMs), a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. Our fine-tuned LLMs, called Llama-2-Chat, are optimized for dialogue use cases. Llama-2-Chat models outperform open-source chat models on most benchmarks we tested, and in our human evaluations for helpfulness and safety, are on par with some popular closed-source models like ChatGPT and PaLM.
+Meta, büyük dil modelleri (LLM'ler) ailesi olan Llama 2'yi geliştirdi ve yayınladı. Bu koleksiyon, 7 milyar ila 70 milyar parametreye kadar ölçeklenebilen, önceden eğitilmiş ve ince ayarlı üretken metin modellerinden oluşur. İnce ayarlı Llama-2-Chat modelleri, diyalog kullanım durumları için optimize edilmiştir. Llama-2-Chat modelleri, test ettiğimiz çoğu açık kaynaklı sohbet modelini geride bırakır ve yardımseverlik ve güvenlik için insan değerlendirmelerimizde, ChatGPT ve PaLM gibi bazı popüler kapalı kaynaklı modellerle eşdeğerdir.
 
-**Model Developers** Meta
+**Model Geliştiricileri:** Meta
 
-**Variations** Llama 2 comes in a range of parameter sizes — 7B, 13B, and 70B — as well as pretrained and fine-tuned variations.
+**Çeşitlilikler:** Llama 2, 7B, 13B ve 70B olmak üzere farklı parametre boyutlarında ve önceden eğitilmiş ve ince ayarlı çeşitliliklerde gelir.
 
-**Input** Models input text only.
+**Girdi:** Modeller yalnızca metin girişi alır.
 
-**Output** Models generate text only.
+**Çıktı:** Modeller yalnızca metin üretir.
 
-**Model Architecture** Llama 2 is an auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety.
+**Model Mimarisi:** Llama 2, optimize edilmiş bir dönüşümcü mimari kullanan otoregresif bir dil modelidir. Ayarlanmış sürümler, yardımseverlik ve güvenlik için insan tercihlerine uyum sağlamak için gözetimli ince ayar (SFT) ve insan geri bildirimiyle pekiştirmeli öğrenme (RLHF) kullanır.
 
-||Training Data|Params|Content Length|GQA|Tokens|LR|
+| |Eğitim Verisi|Parametreler|İçerik Uzunluğu|GQA|Belirteçler|LR|
 |---|---|---|---|---|---|---|
-Llama 2|*A new mix of publicly available online data*|7B|4k|&#10007;|2.0T|3.0 x 10<sup>-4</sup>
-Llama 2|*A new mix of publicly available online data*|13B|4k|&#10007;|2.0T|3.0 x 10<sup>-4</sup>
-Llama 2|*A new mix of publicly available online data*|70B|4k|&#10004;|2.0T|1.5 x 10<sup>-4</sup>
+Llama 2|*Kamuoyunda mevcut çevrimiçi verilerin yeni bir karışımı*|7B|4k|&#10007;|2.0T|3.0 x 10<sup>-4</sup>
+Llama 2|*Kamuoyunda mevcut çevrimiçi verilerin yeni bir karışımı*|13B|4k|&#10007;|2.0T|3.0 x 10<sup>-4</sup>
+Llama 2|*Kamuoyunda mevcut çevrimiçi verilerin yeni bir karışımı*|70B|4k|&#10004;|2.0T|1.5 x 10<sup>-4</sup>
 
-**Llama 2 family of models.** Token counts refer to pretraining data only. All models are trained with a global batch-size of 4M tokens. The 70B version uses Grouped-Query Attention (GQA) for improved inference scalability.
+**Llama 2 modellerinin aileleri.** Belirteç sayıları yalnızca ön eğitim verilerine göre verilmiştir. Tüm modeller, global bir parti boyutu olan 4M belirteçle eğitilmiştir. 70B sürümü, daha iyi çıkarım ölçeklenebilirliği için Gruplu-Sorgu Dikkati (GQA) kullanır.
 
-**Model Dates** Llama 2 was trained between January 2023 and July 2023.
+**Model Tarihleri:** Llama 2, 2023 yılı Ocak ve Temmuz ayları arasında eğitilmiştir.
 
-**Status** This is a static model trained on an offline dataset. Future versions of the tuned models will be released as we improve model safety with community feedback.
+**Durum:** Bu, çevrimdışı bir veri kümesi üzerinde eğitilmiş statik bir modeldir. Topluluk geri bildirimiyle model güvenliğini iyileştirdikçe, ayarlanmış modellerin gelecekteki sürümleri yayınlanacaktır.
 
-**License** A custom commercial license is available at: [https://ai.meta.com/resources/models-and-libraries/llama-downloads/](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)
+**Lisans:** Özel bir ticari lisans, şuradan temin edilebilir: [https://ai.meta.com/resources/models-and-libraries/llama-downloads/](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)
 
-**Research Paper** More information can be found in the paper "Llama-2: Open Foundation and Fine-tuned Chat Models", available at https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/.
+**Araştırma Makalesi:** Daha fazla bilgi için "Llama-2: Açık Temel ve İnce Ayarlı Sohbet Modelleri" başlıklı makaleye, şu adresten ulaşılabilir: [https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/).
 
-**Where to send questions or comments about the model** Instructions on how to provide feedback or comments on the model can be found in the model [README](README.md).
+**Model hakkındaki soruları veya yorumları nereye göndermek için** Modelle ilgili geri bildirim veya yorumları sağlama talimatları, model [README](README.md) dosyasında bulunabilir.
 
-# **Intended Use**
-**Intended Use Cases** Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks.
+# **Amaçlanan Kullanım**
+**Amaçlanan Kullanım Durumları** Llama 2, İngilizce olarak ticari ve araştırma amaçları için tasarlanmıştır. Ayarlanmış modeller, asistan benzeri sohbet için tasarlanmışken, önceden eğitilmiş modeller çeşitli doğal dil üretimi görevlerine uygun olarak adapte edilebilir.
 
-**Out-of-scope Uses** Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Llama 2.
+**Kapsam Dışı Kullanımlar** Geçerli yasalara veya düzenlemelere aykırı şekilde kullanmak. İngilizce dışında dillerde kullanmak. Llama 2 için Kabul Edilebilir Kullanım Politikası ve Lisans Anlaşması tarafından yasaklanmış başka bir şekilde kullanmak.
 
-# **Hardware and Software**
-**Training Factors** We used custom training libraries, Meta's Research Super Cluster, and production clusters for pretraining. Fine-tuning, annotation, and evaluation were also performed on third-party cloud compute.
+# **Donanım ve Yazılım**
+**Eğitim Faktörleri** Ön eğitimde özel eğitim kitaplıkları, Meta'nın Araştırma Süper Kümesi ve ön eğitim için üretim kümeleri kullanılmıştır. İnce ayar, işaretleme ve değerlendirme işlemleri üçüncü taraf bulut hesaplamasında gerçekleştirilmiştir.
 
-**Carbon Footprint** Pretraining utilized a cumulative 3.3M GPU hours of computation on hardware of type A100-80GB (TDP of 350-400W). Estimated total emissions were 539 tCO2eq, 100% of which were offset by Meta’s sustainability program.
+**Karbon Ayakizi** Ön eğitimde, ortalama 3.3M GPU saati, 350-400W TDP'li A100-80GB türündeki donanımlarda hesaplanmıştır. Tahmini toplam emisyon 539 tCO2eq idi ve bu emisyonların tamamı Meta'nın sürdürülebilirlik programı tarafından telafi edilmiştir
 
-||Time (GPU hours)|Power Consumption (W)|Carbon Emitted(tCO<sub>2</sub>eq)|
+.
+
+||Süre (GPU saat)|Güç Tüketimi (W)|Emisyon (tCO<sub>2</sub>eq)|
 |---|---|---|---|
 |Llama 2 7B|184320|400|31.22|
 |Llama 2 13B|368640|400|62.44|
 |Llama 2 70B|1720320|400|291.42|
-|Total|3311616||539.00|
+|Toplam|3311616||539.00|
 
-**CO<sub>2</sub> emissions during pretraining.** Time: total GPU time required for training each model. Power Consumption: peak power capacity per GPU device for the GPUs used adjusted for power usage efficiency. 100% of the emissions are directly offset by Meta's sustainability program, and because we are openly releasing these models, the pretraining costs do not need to be incurred by others.
+**Ön eğitim sırasında CO<sub>2</sub> emisyonları.** Süre: her modelin eğitimi için gereken toplam GPU süresi. Güç Tüketimi: kullanılan GPU'lar için tepe güç kapasitesi ve güç kullanım verimliliği için düzeltilmiş değer. Emisyonların %100'ü doğrudan Meta'nın sürdürülebilirlik programı tarafından telafi edilmiştir ve bu modelleri açıkça yayınladığımızdan dolayı, ön eğitim maliyetleri diğerlerinin tarafından karşılanmak zorunda değildir.
 
-# **Training Data**
-**Overview** Llama 2 was pretrained on 2 trillion tokens of data from publicly available sources. The fine-tuning data includes publicly available instruction datasets, as well as over one million new human-annotated examples. Neither the pretraining nor the fine-tuning datasets include Meta user data.
+# **Eğitim Verisi**
+**Genel Bakış** Llama 2, kamuoyunda mevcut kaynaklardan 2 trilyon belirteçlik veri üzerinde ön eğitimden geçirilmiştir. İnce ayar verileri, kamuoyunda mevcut talimat veri kümesi ile birlikte bir milyondan fazla yeni insan tarafından belirtilmiş örnek içerir. Ne ön eğitim veri kümesi ne de ince ayar veri kümesi, Meta kullanıcı verilerini içerir.
 
-**Data Freshness** The pretraining data has a cutoff of September 2022, but some tuning data is more recent, up to July 2023.
+**Veri Tazeliği** Ön eğitim verilerinin kesim tarihi 2022 yılı Eylül ayına kadar, ancak bazı ayarlama verileri daha yeni, 2023 Temmuz ayına kadar olan verileri içerir.
 
-# **Evaluation Results**
+# **Değerlendirme Sonuçları**
 
-In this section, we report the results for the Llama 1 and Llama 2 models on standard academic benchmarks.
-For all the evaluations, we use our internal evaluations library.
+Bu bölümde, Llama 1 ve Llama 2 modellerinin standart akademik değerlendirme kriterlerindeki sonuçlarını rapor ediyoruz. Tüm değerlendirmeler için, iç değerlendirme kitaplığımızı kullanıyoruz.
 
-|Model|Size|Code|Commonsense Reasoning|World Knowledge|Reading Comprehension|Math|MMLU|BBH|AGI Eval|
+|Model|Boyut|Kod|Sağduyu Çıkarımı|Dünya Bilgisi|Okuma Anlama|Matematik|MMLU|BBH|AGI Değerlendirmesi|
 |---|---|---|---|---|---|---|---|---|---|
 |Llama 1|7B|14.1|60.8|46.2|58.5|6.95|35.1|30.3|23.9|
 |Llama 1|13B|18.9|66.1|52.6|62.3|10.9|46.9|37.0|33.9|
@@ -69,7 +70,7 @@ For all the evaluations, we use our internal evaluations library.
 |Llama 2|13B|24.5|66.9|55.4|65.8|28.7|54.8|39.4|39.1|
 |Llama 2|70B|**37.5**|**71.9**|**63.6**|**69.4**|**35.2**|**68.9**|**51.2**|**54.2**|
 
-**Overall performance on grouped academic benchmarks.** *Code:* We report the average pass@1 scores of our models on HumanEval and MBPP. *Commonsense Reasoning:* We report the average of PIQA, SIQA, HellaSwag, WinoGrande, ARC easy and challenge, OpenBookQA, and CommonsenseQA. We report 7-shot results for CommonSenseQA and 0-shot results for all other benchmarks. *World Knowledge:* We evaluate the 5-shot performance on NaturalQuestions and TriviaQA and report the average. *Reading Comprehension:* For reading comprehension, we report the 0-shot average on SQuAD, QuAC, and BoolQ. *MATH:* We report the average of the GSM8K (8 shot) and MATH (4 shot) benchmarks at top 1.
+**Gruplanmış akademik değerlendirme kriterlerinde genel performans.** *Kod:* Modellerimizin HumanEval ve MBPP üzerindeki ortalama geçiş@1 puanlarını rapor ediyoruz. *Sağduyu Çıkarımı:* PIQA, SIQA, HellaSwag, WinoGrande, ARC kolay ve zor, OpenBookQA ve CommonsenseQA'nın 7-shot sonuçlarını ve diğer tüm kriterler için 0-shot sonuçlarını rapor ediyoruz. *Dünya Bilgisi:* NaturalQuestions ve TriviaQA üzerindeki 5-shot performansını değerlendiriyoruz ve ortalama sonuçlarını rapor ediyoruz. *Okuma Anlama:* Okuma anlama için SQuAD, QuAC ve BoolQ'daki 0-shot ortalama sonuçlarını rapor ediyoruz. *MATEMATİK:* GSM8K (8 atış) ve MATH (4 atış) kriterlerinin en üst düzeydeki sonuçlarını rapor ediyoruz.
 
 |||TruthfulQA|Toxigen|
 |---|---|---|---|
@@ -81,8 +82,7 @@ For all the evaluations, we use our internal evaluations library.
 |Llama 2|13B|41.86|26.10|
 |Llama 2|70B|**50.18**|24.60|
 
-**Evaluation of pretrained LLMs on automatic safety benchmarks.** For TruthfulQA, we present the percentage of generations that are both truthful and informative (the higher the better). For ToxiGen, we present the percentage of toxic generations (the smaller the better).
-
+**Önceden eğitilmiş LLM'lerin otomatik güvenlik değerlendirmeleri.** TruthfulQA için, doğru ve bilgi içeren nesillerin yüzdesini sunuyoruz (yüzde ne kadar yüksekse o kadar iyi). ToxiGen için, toksik nesillerin yüzdesini sunuyoruz (yüzde ne kadar düşükse o kadar iyi).
 
 |||TruthfulQA|Toxigen|
 |---|---|---|---|
@@ -90,9 +90,11 @@ For all the evaluations, we use our internal evaluations library.
 |Llama-2-Chat|13B|62.18|**0.00**|
 |Llama-2-Chat|70B|**64.14**|0.01|
 
-**Evaluation of fine-tuned LLMs on different safety datasets.** Same metric definitions as above.
+**Ayarlanmış LLM'lerin
 
-# **Ethical Considerations and Limitations**
-Llama 2 is a new technology that carries risks with use. Testing conducted to date has been in English, and has not covered, nor could it cover all scenarios. For these reasons, as with all LLMs, Llama 2’s potential outputs cannot be predicted in advance, and the model may in some instances produce inaccurate, biased or other objectionable responses to user prompts. Therefore, before deploying any applications of Llama 2, developers should perform safety testing and tuning tailored to their specific applications of the model.
+ farklı güvenlik veri kümeleri üzerinde değerlendirmesi.** Yukarıdaki metrik tanımlamaları ile aynıdır.
 
-Please see the Responsible Use Guide available at [https://ai.meta.com/llama/responsible-use-guide/](https://ai.meta.com/llama/responsible-use-guide/)
+# **Etik Düşünceler ve Sınırlamalar**
+Llama 2, kullanımıyla birlikte riskler taşıyan yeni bir teknolojidir. Şu ana kadar yapılan testler İngilizce dilinde gerçekleştirilmiş olup tüm senaryoları kapsamamıştır ve kapsayamayabilir. Bu nedenlerle, tıpkı tüm LLM'ler gibi, Llama 2'nin potansiyel çıktıları önceden tahmin edilemez ve model, bazı durumlarda kullanıcı taleplerine yanlış, önyargılı veya başka sakıncalı yanıtlar verebilir. Bu nedenle, Llama 2'nin herhangi bir uygulamasını yayınlamadan önce, geliştiriciler, modelin özgün uygulamalarına yönelik güvenlik testleri ve ayarlamaları yapmalıdır.
+
+Lütfen Sorumlu Kullanım Kılavuzunu şu adresten inceleyin: [https://ai.meta.com/llama/responsible-use-guide/](https://ai.meta.com/llama/responsible-use-guide/)
